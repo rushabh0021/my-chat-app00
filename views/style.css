@@ -1,0 +1,121 @@
+        .chat-message {
+            height: 90vh;
+            width: 50vw;
+            background: #D5F5E3;
+            padding: 5px;
+            overflow-y: auto;
+            box-shadow: 12px 0 15px -4px #AEB6BF, -12px 0 8px -4px #AEB6BF;
+        }
+
+        .input-btnbox {
+            height: 10vh;
+            width: 50vw;
+            padding: 0px;
+            background: #D5F5E3;
+            box-shadow: 12px 0 15px -4px #AEB6BF, -12px 0 8px -4px #AEB6BF;
+        }
+
+        .send-message {
+            display: flex;
+            padding: 8px;
+        }
+
+
+        .send-message #inputbox,
+        .send-message button {
+            border-radius: 24px;
+        }
+
+        .send-message #inputbox {
+            background-color: lightblue;
+        }
+        textarea{
+            resize: none;
+        }
+
+        header {
+            height: 10vh;
+            background-color: rgb(153, 183, 185);
+            text-align: center;
+        }
+
+        header p{
+            font-size: 26px;
+            padding-top: 6px;
+            font-weight: 700;
+        }
+        .main-container {
+            background-color: #E8F8F5
+        }
+
+        .modal-footer {
+            text-align: center;
+        }
+
+        .message-show{
+            display: flex;
+            flex-direction: column;
+        }
+        .my-message{
+            align-self: flex-end;
+        }
+        .other-message{
+            align-self: flex-start;
+        }
+        .invalid-err {
+            color: red;
+            padding: 3px;
+            font-size: 12px;
+        }
+        .display-none{
+            display: none;
+        }
+
+       #messages p{
+        background: cadetblue;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 15px;
+        width: fit-content;
+        margin: 5px;
+       } 
+
+      
+        @media screen and (max-width: 675px) {
+            .chat-message {
+                margin-top: 0px;
+                height: 90vh;
+                width: 100vw;
+                background: #D5F5E3;
+                padding: 0px;
+                overflow-y: auto;
+            }
+
+            .container-fluid {
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+
+            .input-btnbox {
+                height: 10vh;
+                width: 100vw;
+                padding: 0px;
+                background: #D5F5E3;
+            }
+
+            #userNameModal {
+                top: 20vh;
+            }
+            #messages p{
+                background: cadetblue;
+                padding: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 15px;
+                width: fit-content;
+                margin: 5px;
+               } 
+
+        }
+    
