@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var app = express();
 
-var server = app.listen(3001, () => {
+var server = app.listen(process.env.PORT || 3001, () => {
     console.log('server is running on port', server.address());
 });
 
