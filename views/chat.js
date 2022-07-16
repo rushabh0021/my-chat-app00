@@ -42,11 +42,11 @@ function addMessages(message) {
 }
 
 function getMessages() {
-    $.get('http://localhost:3001/messages', (data) => {
+    $.get('https://my-chat-app00.herokuapp.com/messages', (data) => {
         data.forEach(addMessages);
     });
 }
 
 function sendMessage(message) {
-    $.post('http://localhost:3001/messages', message);
+    $.post('https://my-chat-app00.herokuapp.com/messages', message);
 }
